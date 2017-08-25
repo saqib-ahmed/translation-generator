@@ -1,0 +1,23 @@
+apply plugin: 'groovy'
+apply plugin: 'application'
+version = '1.0'
+mainClassName='com.app.ef.translation'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile group: 'org.codehaus.groovy.modules.http-builder', name: 'http-builder', version: '0.5.0-RC2'
+
+}
+
+task uberjar(type: Jar,dependsOn:[':compileJava',':compileGroovy']) {
+    from files(sourceSets.main.output.classesDir)
+    from configurations.runtime.asFileTree.files.collect { zipTree(it) }
+
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+}
