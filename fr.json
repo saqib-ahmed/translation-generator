@@ -1,0 +1,35 @@
+
+{
+    "CALENDAR": {
+        "CALENDAR": "fr_Calendar",_fr
+        "SEARCH": "fr_Search",_fr
+        "TODAY": "fr_Today",_fr
+        "DAY": "fr_Day",_fr
+        "WEEK": "fr_Week",_fr
+        "MONTH": "fr_Month",_fr
+        "PREVIOUS": "Previous \", abc, $. ",
+        "NEXT": "fr_Next",_fr
+        "ADD_EVENT": "fr_Add event",_fr
+        "EDIT_EVENT": "fr_Edit event",_fr
+        "CLOSE_DIALOG": "fr_Close dialog",_fr
+        "TITLE": "fr_Title",_fr
+        "ALL_DAY": "fr_All day",_fr
+        "START_DATE": "fr_Start Date",_fr
+        "START_TIME": "fr_Start Time",_fr
+        "END_DATE": "fr_End Date",_fr
+        "END_TIME": "fr_End Time",_fr
+        "REPEAT": "fr_Repeat",_fr
+        "LOCATION": "fr_Location",_fr
+        "NOTIFICATIONS": "fr_Notifications",_fr
+        "ADD_NOTIFICATION": "+ Add Another Notification",
+        "NOTES": "fr_Notes",_fr
+        "SAVE": "fr_SAVE",_fr
+        "DELETE": "fr_Delete",_fr
+        "30_MIN_BEFORE": "fr_30 minutes before",_fr
+        "15_MIN_BEFORE": "fr_15 minutes before",_fr
+        "30_MIN_LATER": "fr_30 minutes later",_fr
+        "ERRORS": {
+            "TITLE_REQUIRED": "fr_Title field is required"_fr
+        }
+    }
+}
