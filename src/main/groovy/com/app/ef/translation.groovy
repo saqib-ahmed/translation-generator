@@ -49,8 +49,8 @@ class translation {
         }
       }catch(Exception ex){
         x++
-        str = str.replaceFirst('\"' , '\"${tl}_')
-        return str + "_" + tl
+        str = str.replaceFirst("\"" , "\"${tl}_")
+        return str
       }
     }
 }
