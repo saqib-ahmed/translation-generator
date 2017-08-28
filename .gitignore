@@ -1,7 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Gradle template
+
 .gradle
 /build/*
+/src/main/Node/node_modules
 
 # Ignore Gradle GUI config
 gradle-app.setting
