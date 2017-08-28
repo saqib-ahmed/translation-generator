@@ -1,0 +1,12 @@
+{
+  "name": "translationGenerator",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "google-translate-api":"^2.3.0",
+    "google-translate-token":"^1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

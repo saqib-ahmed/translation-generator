@@ -8,7 +8,7 @@ import groovyx.net.http.HTTPBuilder
 import groovy.json.JsonBuilder
 
 class translation {
-    static def x=1
+    static def x =1
     public static void main(String[] args){
         def obj = new translation()
         def dir = args[0];
@@ -21,11 +21,8 @@ class translation {
         inputFile.eachLine { line ->
           if(line.endsWith(',') || line.endsWith('\"')){
             def tok = line.tokenize(':')
-            println tok[1]
             def out = obj.translate(tok[1], tl)
-            println out
             def outLine = line.replaceAll(tok[1], out)
-            println outLine
             outFile.append("\n"+outLine)
           } else{
             outFile.append("\n" + line)
@@ -41,7 +38,6 @@ class translation {
           println "Getting translation"
           html = http.post(path : '/translate_a/single',
                   query : [client:"gtx", sl :"auto", tl: tl , dt:"t", q: str])
-          println html[0][0][0]
           return html[0][0][0]
         }
         else{
